@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://ddqcw66po6qj7"]
+
+[ext_resource type="Texture2D" uid="uid://bytfcq0in0ak" path="res://assets/tela_inicial.png" id="1_m3v6e"]
+[ext_resource type="FontFile" uid="uid://2fwlxut8mu5t" path="res://fonts/BD_Cartoon_Shout.ttf" id="2_60114"]
+[ext_resource type="Texture2D" uid="uid://2hailyt8dno3" path="res://assets/Fox/raposinha_sa_parada4.png" id="3_asl0x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_us6qa"]
+atlas = ExtResource("3_asl0x")
+region = Rect2(0, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hpho"]
+atlas = ExtResource("3_asl0x")
+region = Rect2(191, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wvbr"]
+atlas = ExtResource("3_asl0x")
+region = Rect2(382, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wcqf"]
+atlas = ExtResource("3_asl0x")
+region = Rect2(573, 0, 191, 193)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jsghm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_us6qa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hpho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wvbr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wcqf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node" type="Node"]
+
+[node name="TelaInicial" type="Sprite2D" parent="."]
+position = Vector2(622, 428)
+scale = Vector2(2.43481, 1.65141)
+texture = ExtResource("1_m3v6e")
+
+[node name="Label" type="Label" parent="TelaInicial"]
+offset_left = -249.712
+offset_top = -151.992
+offset_right = 251.288
+offset_bottom = -4.99171
+theme_override_fonts/font = ExtResource("2_60114")
+theme_override_font_sizes/font_size = 41
+text = "parabens
+voce espantou o
+lenhador malvado"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TelaInicial"]
+position = Vector2(13.9641, 113.237)
+sprite_frames = SubResource("SpriteFrames_jsghm")
+autoplay = "default"
+frame_progress = 0.324093

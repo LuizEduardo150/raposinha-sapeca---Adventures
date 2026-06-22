@@ -1,0 +1,255 @@
+[gd_scene load_steps=32 format=3 uid="uid://b5cn2asxb42hg"]
+
+[ext_resource type="Script" path="res://scripts/menu_principal.gd" id="1_tbd36"]
+[ext_resource type="Texture2D" uid="uid://bytfcq0in0ak" path="res://assets/tela_inicial.png" id="2_mkl2p"]
+[ext_resource type="FontFile" uid="uid://2fwlxut8mu5t" path="res://fonts/BD_Cartoon_Shout.ttf" id="2_ugt3s"]
+[ext_resource type="Texture2D" uid="uid://dxvx75xsy7i2q" path="res://assets/Fox/raposinha_despreguicando_4.png" id="4_x6li6"]
+[ext_resource type="Texture2D" uid="uid://2hailyt8dno3" path="res://assets/Fox/raposinha_sa_parada4.png" id="5_lgvsy"]
+
+[sub_resource type="Animation" id="Animation_eookf"]
+resource_name = "movimenta"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gc5vp"]
+_data = {
+"movimenta": SubResource("Animation_eookf")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hc1kc"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(0, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vo7v"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(191, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2exn"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(382, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ad8t"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(573, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmjcu"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(764, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pro8q"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(0, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5r7ih"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(191, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rysa7"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(382, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1e2u"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(573, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtghh"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(573, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7oe6"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(382, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfkkp"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(191, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2awb"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(0, 193, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y37ao"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(764, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5e5s"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(573, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8ix6"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(382, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tqm7"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(191, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1woo"]
+atlas = ExtResource("4_x6li6")
+region = Rect2(0, 0, 191, 193)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_786uv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hc1kc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vo7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2exn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ad8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmjcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pro8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5r7ih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rysa7")
+}, {
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_m1e2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtghh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7oe6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfkkp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2awb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y37ao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5e5s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8ix6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7tqm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1woo")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0x64u"]
+atlas = ExtResource("5_lgvsy")
+region = Rect2(0, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydoam"]
+atlas = ExtResource("5_lgvsy")
+region = Rect2(191, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nq2ma"]
+atlas = ExtResource("5_lgvsy")
+region = Rect2(382, 0, 191, 193)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l70v"]
+atlas = ExtResource("5_lgvsy")
+region = Rect2(573, 0, 191, 193)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vsnqm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0x64u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydoam")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nq2ma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l70v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 271.0
+offset_top = 153.0
+offset_right = 348.0
+offset_bottom = 245.0
+script = ExtResource("1_tbd36")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gc5vp")
+}
+
+[node name="Label" type="Label" parent="AnimationPlayer"]
+offset_left = 67.0
+offset_top = 31.0
+offset_right = 564.0
+offset_bottom = 178.0
+theme_override_fonts/font = ExtResource("2_ugt3s")
+theme_override_font_sizes/font_size = 41
+text = "Raposinha Sapeca
+Adventures
+  "
+horizontal_alignment = 1
+
+[node name="TelaInicial" type="Sprite2D" parent="."]
+position = Vector2(38.5, 58)
+scale = Vector2(1.20508, 0.824219)
+texture = ExtResource("2_mkl2p")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -204.0
+offset_top = 1.0
+offset_right = 216.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="B_comecar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Começar"
+
+[node name="B_sair" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Sair"
+
+[node name="raposinha_despreguicando" type="AnimatedSprite2D" parent="."]
+position = Vector2(41, 141)
+sprite_frames = SubResource("SpriteFrames_786uv")
+frame = 17
+frame_progress = 1.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 8.805
+autostart = true
+
+[node name="raposinha_parada" type="AnimatedSprite2D" parent="."]
+position = Vector2(42, 143)
+sprite_frames = SubResource("SpriteFrames_vsnqm")
+frame_progress = 0.0735374
+
+[connection signal="pressed" from="VBoxContainer/B_comecar" to="." method="_on_b_comecar_pressed"]
+[connection signal="pressed" from="VBoxContainer/B_sair" to="." method="_on_b_sair_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
